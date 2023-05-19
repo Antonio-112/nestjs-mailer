@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "ad173b96-1f52-4bd4-ac81-bf51af4911c1",
+		"name": "NestJS Email API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Enviar Email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"to\": \"example@gmail.com\",\n    \"subject\": \"Test Email\",\n    \"text\": \"This is a test email from NestJS\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"email"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
